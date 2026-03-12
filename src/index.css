@@ -1,1 +1,35 @@
+@import url('https://fonts.googleapis.com/css2?family=Sora:wght@500;700;800&family=Space+Grotesk:wght@400;500;600;700&display=swap');
 @import "tailwindcss";
+
+:root {
+	font-family: 'Space Grotesk', 'Segoe UI', sans-serif;
+}
+
+body {
+	margin: 0;
+	min-height: 100vh;
+	background:
+		radial-gradient(circle at 20% 20%, rgba(56, 189, 248, 0.18), transparent 35%),
+		radial-gradient(circle at 85% 85%, rgba(16, 185, 129, 0.14), transparent 38%),
+		#020617;
+}
+
+.font-display {
+	font-family: 'Sora', 'Space Grotesk', 'Segoe UI', sans-serif;
+}
+
+@keyframes floatSlow {
+	0% {
+		transform: translateY(0px);
+	}
+	50% {
+		transform: translateY(-6px);
+	}
+	100% {
+		transform: translateY(0px);
+	}
+}
+
+.animate-float-slow {
+	animation: floatSlow 5s ease-in-out infinite;
+}

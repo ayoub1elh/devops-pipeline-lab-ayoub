@@ -33,9 +33,14 @@ function App() {
       <div className="mx-auto flex w-full max-w-6xl flex-col px-6 pb-14 pt-10 md:px-10">
         <header className="mb-12 flex items-center justify-between rounded-2xl border border-white/10 bg-white/5 px-4 py-3 backdrop-blur-sm md:px-6">
           <p className="font-mono text-sm tracking-wide text-cyan-300">DEVOPS PIPELINE LAB</p>
-          <span className="rounded-full border border-emerald-300/40 bg-emerald-400/15 px-3 py-1 text-xs font-semibold uppercase tracking-wide text-emerald-200">
-            Deployment Ready
-          </span>
+          <div className="flex items-center gap-2">
+            <span className="rounded-full border border-cyan-300/35 bg-cyan-400/10 px-3 py-1 text-xs font-semibold tracking-wide text-cyan-100">
+              by Ayoub
+            </span>
+            <span className="rounded-full border border-emerald-300/40 bg-emerald-400/15 px-3 py-1 text-xs font-semibold uppercase tracking-wide text-emerald-200">
+              Deployment Ready
+            </span>
+          </div>
         </header>
 
         <main className="space-y-10">
@@ -51,6 +56,9 @@ function App() {
                 This lab demonstrates automated linting, build validation, and zero-touch deployment.
                 Once code is pushed, GitHub Actions handles quality checks and publishes the latest build.
               </p>
+              <p className="inline-flex w-fit items-center rounded-xl border border-white/15 bg-white/[0.04] px-4 py-2 text-sm text-slate-200">
+                Author: Ayoub | GitHub: @ayoub1elh
+              </p>
               <div className="flex flex-wrap items-center gap-3">
                 <a
                   href="https://github.com/ayoub1elh/devops-pipeline-lab-ayoub/actions"
@@ -61,12 +69,12 @@ function App() {
                   View Actions
                 </a>
                 <a
-                  href="https://ayoub1elh.github.io/devops-pipeline-lab-ayoub/"
+                  href="https://github.com/ayoub1elh"
                   target="_blank"
                   rel="noreferrer"
                   className="rounded-xl border border-white/25 bg-white/5 px-5 py-3 text-sm font-semibold text-white transition hover:-translate-y-0.5 hover:bg-white/10"
                 >
-                  Open Live Site
+                  Visit GitHub Profile
                 </a>
               </div>
             </div>
@@ -118,6 +126,10 @@ function App() {
             </article>
           </section>
         </main>
+
+        <footer className="mt-10 rounded-2xl border border-white/10 bg-white/[0.03] px-5 py-4 text-center text-sm text-slate-300">
+          Built and maintained by Ayoub (<a className="text-cyan-300 hover:text-cyan-200" href="https://github.com/ayoub1elh" target="_blank" rel="noreferrer">@ayoub1elh</a>) for this DevOps CI/CD lab demo.
+        </footer>
       </div>
     </div>
   )
